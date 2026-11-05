@@ -759,6 +759,22 @@ img {
     padding: 64px 0;
   }
 
+  .hero-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-inner .hero-media {
+    width: 100%;
+    order: 1;
+  }
+
+  .hero-inner .hero-text {
+    width: 100%;
+    order: 2;
+  }
+
   .feature-row {
     grid-template-columns: 1fr;
     gap: 32px;
