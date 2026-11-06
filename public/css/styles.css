@@ -981,6 +981,15 @@ li {
     padding: 64px 0;
   }
 
+  .playbook-grid .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .playbook-grid .card img {
+    width: 100%;
+  }
+
   .feature-row {
     grid-template-columns: 1fr;
     gap: 32px;
