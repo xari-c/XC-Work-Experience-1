@@ -780,10 +780,10 @@ li {
 .menu__backdrop {
   position: absolute;
   background-color: var(--ink-soft);
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 50px;
   right: 0;
-  bottom: 0;
+  bottom: 20px;
   z-index: 99;
   display: flex;
   align-items: center;
@@ -792,16 +792,53 @@ li {
   transition: all 300ms ease;
   opacity: 0;
   transform: translate(100%);
+  border-radius: 18px 0 0 18px;
+}
+
+.menu__backdrop ul {
+  padding-inline-start: 0;
+}
+
+.menu__backdrop .menu__links:not(:last-child) {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list:not(:last-child) {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 125px;
+}
+
+.burger-tint {
+  position: absolute;
+  background-color: var(--ink);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98;
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  transform: translate(100%);
 }
 
 .menu--open {
   max-height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .menu--open .menu__backdrop {
   visibility: visible !important;
   opacity: 1;
+  transform: translate(0);
+}
+
+.menu--open .burger-tint {
+  visibility: visible !important;
+  opacity: 0.99;
   transform: translate(0);
 }
 
@@ -812,15 +849,15 @@ li {
 }
 
 .menu__list {
-  padding: 32px 0;
+  padding: 16px 0;
 }
 
 .menu__link{
   color: white;
-  font-size: 40px;
+  font-size: 16px;
 }
 
-.menu-list a {
+.menu__list a {
   text-decoration:none;
 }
 
@@ -839,10 +876,6 @@ li {
 
   h2 {
     font-size: 30px;
-  }
-  
-  .btn {
-    font-size: 14px;
   }
 
   .btn__menu {
