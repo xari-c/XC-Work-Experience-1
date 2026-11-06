@@ -755,8 +755,27 @@ img {
     font-size: 30px;
   }
 
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
   .section {
     padding: 64px 0;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .logo .logo-mark {
+    width: 28px;
+    height: 28px;
   }
 
   .hero-inner {
