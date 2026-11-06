@@ -954,6 +954,21 @@ li {
   .nav-links {
     display: none;
   }
+
+  .playbook-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .playbook-grid .card {
+    display: flex;
+  }
+
+  .playbook-grid .card img {
+    width: 25%;
+  }
+  
 }
 
 @media (max-width: 768px) {
