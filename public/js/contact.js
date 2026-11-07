@@ -1,6 +1,15 @@
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 
+// Hamburger open/close functionality
+function openMenu() {
+  document.body.classList += " menu--open"
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu--open')
+}
+
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
 
