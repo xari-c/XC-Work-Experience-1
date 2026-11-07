@@ -974,7 +974,7 @@ li {
 @media (max-width: 768px) {
 
   .container {
-    padding: 0 60px;
+    margin: 0 50px;
   }
 
   .section {
@@ -1016,7 +1016,15 @@ li {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 34px;
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .container {
+    margin: 0 16px;
   }
 
   .logo {
